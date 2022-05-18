@@ -831,6 +831,9 @@ ol {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+
   color: var(--logo-color-two);
   background: var(--logo-color-left);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -847,10 +850,131 @@ ol {
   position: relative;
 }
 
+.modal-field-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .input-icon {
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
   transition: fill var(--main-transition-time) var(--cubic);
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon {
+  fill: transparent;
+}
+
+/* .check-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
+  margin-right: 8px;
+} */
+
+.check-link {
+  color: var(--logo-color-left);
+  text-decoration: underline;
+}
+
+.input-check:checked + .check-text span {
+  background-color: #2196f3;
+  border: none;
+}
+
+.input-check:checked + .check-text .check-icon {
+  fill: var(--logo-color-two);
+}
+
+/* .input-check:checked + .check-text::before {
+  background-color: #2196f3;
+  border: none;
+  background-image: url(../images/icons/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.footer-subscribe {
+  margin-left: 93px;
+}
+
+.footer-sub-field {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-text {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--logo-color-two);
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 0px 15px 16px;
+  background-color: var(--hero-color);
+  color: var(--logo-color-two);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-icon {
+  fill: var(--logo-color-two);
+}
+
+.footer-btn {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 13px;
+  background-color: var(--logo-color-left);
+  color: var(--logo-color-two);
+}
+
+.footer-icon {
+  margin-left: 10px;
 }

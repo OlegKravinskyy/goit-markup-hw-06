@@ -107,7 +107,7 @@
                       id="user-email"
                       required
                     />
-                    <svg class="input-icon" width="18">
+                    <svg class="input-icon" width="18" heigth="18">
                       <use href="./images/icons/symbol-defs.svg#icon-email-black"></use>
                     </svg>
                   </div>
@@ -121,6 +121,24 @@
                       class="modal-text"
                     ></textarea>
                   </label>
+                </div>
+                <div class="modal-field-check">
+                  <input
+                    type="checkbox"
+                    class="input-check hidden-title"
+                    id="input-check"
+                    name="policy"
+                    value="policy"
+                  />
+                  <label for="input-check" class="check-text">
+                    <span>
+                      <svg class="check-icon" width="16" heigth="15">
+                        <use href="./images/icons/symbol-defs.svg#icon-vector1"></use>
+                      </svg>
+                    </span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="check-link">Условия договора</a></label
+                  >
                 </div>
                 <button type="submit" class="modal-btn">Отправить</button>
               </form>
@@ -484,6 +502,24 @@
             </ul>
           </div>
         </div>
+        <form class="footer-subscribe">
+          <label class="footer-text" for="user-subscribe">Подпишитесь на рассылку</label>
+          <div class="footer-sub-field">
+            <input
+              type="email"
+              name="user-subscribe"
+              id="user-subscribe"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+            <button class="footer-btn" type="submit">
+              Подписаться
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
